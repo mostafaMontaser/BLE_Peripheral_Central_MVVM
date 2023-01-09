@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connected_device_name_label"
+        android:layout_marginTop="64dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_connected_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_status_label"
+        android:layout_marginTop="32dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="_"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_characteristic_label"
+        android:layout_marginTop="32dp"/>
+
+
+    <ImageView
+        android:id="@+id/txt_server_characteristic_value"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/btn_request_read_characteristic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/request_read_characteristic"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:background="#BDBDBD"
+        android:padding="8dp"
+        android:elevation="4dp"/>
+
+
+</LinearLayout>

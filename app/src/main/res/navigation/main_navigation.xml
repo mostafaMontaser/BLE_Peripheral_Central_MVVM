@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2018, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/destination">
+
+    <fragment
+        android:id="@+id/destination"
+        android:name="com.swenson.blechat.view.dashboard.DashboardFragment"
+        android:label="title_fragment"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_destination_to_centralFragment"
+            app:destination="@id/centralFragment" />
+        <action
+            android:id="@+id/action_destination_to_peripheralFragment"
+            app:destination="@id/peripheralFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/centralFragment"
+        android:name="com.swenson.blechat.view.central.CentralFragment"
+        android:label="CentralFragment"
+        tools:layout="@layout/fragment_central">
+        <action
+            android:id="@+id/action_centralFragment_to_deviceConnectFragment"
+            app:destination="@id/deviceConnectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peripheralFragment"
+        android:name="com.swenson.blechat.view.peripheral.PeripheralFragment"
+        android:label="PeripheralFragment"
+        tools:layout="@layout/fragment_peripheral" />
+    <fragment
+        android:id="@+id/deviceConnectFragment"
+        android:name="com.swenson.blechat.view.central.DeviceConnectFragment"
+        android:label="DeviceConnectFragment"
+        tools:layout="@layout/fragment_device_connect">
+        <argument
+            app:nullable="true"
+            android:name="device_name"
+            app:argType="string" />
+        <argument
+            app:nullable="true"
+            android:name="device_address"
+            app:argType="string" />
+    </fragment>
+</navigation>

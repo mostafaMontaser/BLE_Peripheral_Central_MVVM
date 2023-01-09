@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BLE Chat</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="error_server">There\'s problem at the system try again later.</string>
+    <string name="error_client">Try again later.</string>
+    <string name="try_again">Try Again</string>
+    <string name="bt_not_enabled">User declined to enable Bluetooth.</string>
+    <string name="bt_not_permit_coarse">User declined to permit ACCESS_COARSE_LOCATION.</string>
+    <string name="bt_not_permit_scan">User declined to permit BLUETOOTH_SCAN.</string>
+    <string name="bt_not_permit_connect">User declined to permit BLUETOOTH_CONNECT.</string>
+    <string name="bt_not_permit_advertise">User declined to permit BLUETOOTH_ADVERTISE.</string>
+    <string name="bt_ads_not_supported">Bluetooth Advertisements are not supported on this device.</string>
+    <string name="bt_not_supported">Bluetooth is not supported on this device.</string>
+    <string name="button_role_peripheral">Peripheral</string>
+    <string name="button_role_central">Central</string>
+    <string name="scan_start_toast">Scanning for</string>
+    <string name="seconds">seconds.</string>
+    <string name="already_scanning">Scanning already started.</string>
+    <string name="error_unknown">Unknown error.</string>
+    <string name="scan">scan</string>
+    <string name="connect_device">connect</string>
+    <string name="notify">Notify Client</string>
+    <string name="choose_color">Choose color</string>
+    <string name="advertise_device">Advertise Device</string>
+    <string name="status_error_when_connecting">An error occurred when connecting to a device. Error Code</string>
+    <string name="connected_device_name_label">Connected Device Name</string>
+    <string name="connection_status_label">Connection Status</string>
+    <string name="server_characteristic_label">Server Characteristic value</string>
+    <string name="request_read_characteristic">Request Characteristic</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="characteristic_value_received">Characteristic value received: %1$d</string>
+</resources>
